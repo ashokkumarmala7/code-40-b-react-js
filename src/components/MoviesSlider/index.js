@@ -11,7 +11,7 @@ const MoviesSlider = props => {
   const settings = {
     dots: false,
     slidesToScroll: 1,
-    slidesToShow: 4,
+    slidesToShow: 3,
   }
   const {moviesList} = props
 
@@ -19,7 +19,7 @@ const MoviesSlider = props => {
     <>
       <Slider {...settings}>
         {moviesList.map(eachMovie => (
-          <MovieItem key={eachMovie.id} moviesDetails={eachMovie} />
+          <MovieItem key={eachMovie.id} movieDetails={eachMovie} />
         ))}
       </Slider>
     </>
